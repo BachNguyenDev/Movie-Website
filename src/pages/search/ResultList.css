@@ -1,0 +1,75 @@
+.result-list-container {
+  margin: 32px auto 0 auto;
+  max-width: 900px;
+  color: #fff;
+}
+
+.result-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: #fff;
+}
+
+.result-loading,
+.result-error,
+.result-empty {
+  color: #bbb;
+  font-size: 1.1rem;
+  margin: 18px 0;
+  text-align: center;
+}
+
+.result-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  justify-content: flex-start;
+}
+
+.result-item {
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+  overflow: hidden;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.result-item:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+}
+
+.result-poster {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  background: #232323;
+}
+
+.result-info {
+  padding: 12px 14px 16px 14px;
+  width: 100%;
+}
+
+.result-movie-title {
+  font-size: 1.08rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #fff;
+}
+
+.result-release-date {
+  font-size: 0.95rem;
+  color: #03a9f4;
+  margin-bottom: 6px;
+}
+
+.result-overview {
+  font-size: 0.97rem;
+  color: #ccc;
+  min-height: 48px;
+}

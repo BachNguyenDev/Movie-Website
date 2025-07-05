@@ -1,0 +1,81 @@
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  transition: background-image 0.5s ease-in-out;
+  display: flex;
+  align-items: flex-end;
+}
+
+.banner .container{
+  background: transparent !important;
+  box-shadow: none !important;
+  width: 700px;
+  margin-left: 0;
+  margin-bottom: 2.5rem;
+  padding-bottom: 3rem;
+  position: relative;
+  z-index: 2;
+}
+.container .mt-3{
+  background: transparent;
+}
+.banner h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  background: transparent;
+}
+
+.banner .lead {
+  font-size: 1.05rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+  max-width: 600px;
+  background: transparent;
+}
+
+.banner .btn {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 2rem;
+  border-radius: 0.3rem;
+  margin-right: 0.7rem;
+}
+
+.banner .btn-primary {
+  background: #e50914;
+  border: none;
+}
+
+.banner .btn-primary:hover {
+  background: #b0060f;
+}
+
+.banner .btn-secondary {
+  background: rgba(109, 109, 110, 0.7);
+  color: #fff;
+  border: none;
+}
+
+.banner .btn-secondary:hover {
+  background: rgba(109, 109, 110, 1);
+}
+
+@media (max-width: 900px) {
+  .banner .container {
+    width: 90%;
+    margin-bottom: 1.5rem;
+  }
+  .banner h1 {
+    font-size: 1.5rem;
+  }
+  .banner .lead {
+    font-size: 0.95rem;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,15 @@
+.movie-detail {
+  display: flex;
+  background: transparent;
+  color: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  margin: 24px 0;
+  align-items: flex-start;
+}
+.movie-detail h2 {
+  margin-bottom: 8px;
+}
+.movie-detail hr {
+  margin: 8px 0 16px 0;
+}
