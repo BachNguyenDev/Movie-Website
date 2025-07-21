@@ -10,6 +10,7 @@ function SearchForm() {
   const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [selectedMovie, setSelectedMovie] = useState(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -32,6 +33,8 @@ function SearchForm() {
     setResults([]);
     setError(null);
   };
+
+
 
   return (
     <>
@@ -56,7 +59,8 @@ function SearchForm() {
           </button>
         </div>
       </form>
-      <ResultList results={results} loading={loading} error={error} />
+      <ResultList results={results} loading={loading} error={error}  />
+      
     </>
   );
 }
